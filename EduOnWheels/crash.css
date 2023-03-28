@@ -1,0 +1,529 @@
+#but1 {
+    font-weight: 700;
+    font-size: 17px;
+    width: 200px;
+    height: 60px;
+    border: none;
+    color: white;
+    margin: 2px;
+  
+    background-image: linear-gradient(
+      to top left,
+      hsl(49.04, 100%, 57.06%) 0%,
+      hsl(49.04, 100%, 57.06%) 20%,
+      hsl(58.89, 45.92%, 53.77%) 20%,
+      hsl(58.89, 45.92%, 53.77%) 40%,
+      hsl(124.17, 16.44%, 57.06%) 40%,
+      hsl(124.17, 16.44%, 57.06%) 60%,
+      hsl(200.79, 47.04%, 47.21%) 60%,
+      hsl(200.79, 47.04%, 47.21%) 80%,
+      hsl(210, 100%, 43.92%) 80%,
+      hsl(210, 100%, 43.92%) 100%
+    );
+    transition: 1s all;
+    box-shadow: 0 1px 15px 0 #797f7b;
+  }
+  
+  but1:hover {
+    transform: scale(1.1);
+    box-shadow: -2px 2px 10px #616562,
+               2px -2px 10px #717774;
+  }
+  
+
+
+
+  #but3 {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-radius: 9px;
+    background: #d5f365;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+    float: right;
+    }
+    
+    #but3:hover {
+    box-shadow: 7px 5px 56px -14px #C3D900;
+    }
+    
+    #but3:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px #C3D900;
+    }
+
+
+    /* button for twitter link */
+    button.twitter {
+      background: transparent;
+      position: absolute;
+      padding: 5px 15px;
+      display: flex;
+      align-items: center;
+      font-size: 17px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1px solid rgb(40, 144, 241);
+      border-radius: 25px;
+      outline: none;
+      overflow: hidden;
+      color: rgb(40, 144, 241);
+      transition: color 0.3s 0.1s ease-out;
+      text-align: center;
+    }
+    
+    button.twitter span {
+      margin: 10px;
+    }
+    
+    button.twitter ::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      content: '';
+      border-radius: 50%;
+      display: block;
+      width: 20em;
+      height: 20em;
+      left: -5em;
+      text-align: center;
+      transition: box-shadow 0.5s ease-out;
+      z-index: -1;
+    }
+    
+    button.twitter :hover {
+      color: #fff;
+      border: 1px solid rgb(40, 144, 241);
+    }
+    
+    button.twitter :hover::before {
+      box-shadow: inset 0 0 0 10em rgb(40, 144, 241);
+    }
+     
+/* button to text me on whatspp */
+    button.whtap {
+      background-color: #fff;
+      border: 1px solid #25D366;
+      padding: 5px;
+      position: relative;
+      width: 6.2em;
+      height: 2em;
+      transition: 0.5s;
+      font-size: 17px;
+      border-radius: 0.4em;
+    }
+    
+    button.whtap p {
+      position: absolute;
+      top: 0.4em;
+      left: 1.15em;
+      margin: 0;
+      padding: 0;
+      transition: .5s;
+      color: #25D366;
+    }
+    
+    button.whtap svg {
+      position: absolute;
+      top: 0.45em;
+      right: 0.5em;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      transition: 0.5s;
+      height: 1em;
+      fill: #fff
+    }
+    
+    button.whtap :hover p {
+      left: 0.5em;
+      color: #fff
+    }
+    
+    button.whtap :hover svg {
+      opacity: 1;
+    }
+    
+    button.whtap :hover {
+      background-color: #25D366;
+    }
+   
+    
+
+    /* buttoon for follow me on insta */
+    /* From uiverse.io by @alshahwan */
+button.flwme {
+  background-color: #fff;
+  border: 1px solid #bc2a8d;
+  padding: 5px;
+  position: relative;
+  width: 7.2em;
+  height: 2em;
+  transition: 0.5s;
+  font-size: 17px;
+  border-radius: 0.4em;
+}
+
+button.flwme p {
+  position: absolute;
+  top: 0.4em;
+  left: 1.2em;
+  margin: 0;
+  padding: 0;
+  transition: .5s;
+  color: #bc2a8d;
+}
+
+button.flwme svg {
+  position: absolute;
+  top: 0.45em;
+  right: 0.5em;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  height: 1em;
+  fill: #fff
+}
+
+button.flwme :hover p {
+  left: 0.6em;
+  color: #fff
+}
+
+button.flwme :hover svg {
+  opacity: 1;
+}
+
+button.flwme :hover {
+  background-color: #bc2a8d;
+}
+
+
+
+/* button of insta/fb/twitter */
+<ul class="wrapper">
+    <li class="icon facebook">
+        <span class="tooltip">Facebook</span>
+        <span><i class="fab fa-facebook-f"></i></span>
+    </li>
+    <li class="icon twitter">
+        <span class="tooltip">Twitter</span>
+        <span><i class="fab fa-twitter"></i></span>
+    </li>
+    <li class="icon instagram">
+        <span class="tooltip">Instagram</span>
+        <span><i class="fab fa-instagram"></i></span>
+    </li>
+</ul>
+
+
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.twitter {
+  margin-top: 1.5em;
+  margin-left: -.9em;
+  fill: #03A9F4;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.github {
+  margin-top: -.6em;
+  margin-left: 1.2em;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.discord {
+  margin-top: -.9em;
+  margin-left: -1.2em;
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03A9F4;
+}
+
+.card2:hover .twitter {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+  fill: white;
+}
+
+
+
+/* button for explore wherr jupiter turns */
+button {
+  border: 0;
+  background: radial-gradient(ellipse at 50% 50%,black 20%,transparent 72%);
+  font-size: 17px;
+  height: 200px;
+  width: 300px;
+  zoom: 1.2;
+}
+
+.planet {
+  width: 70px;
+  margin: auto;
+  position: relative;
+  transform: rotateZ(0deg);
+  isolation: isolate;
+  scale: 1;
+  transition: all 1.5s;
+}
+
+.planet:hover {
+  transform: rotateZ(240deg);
+  scale: 2;
+  /* filter: drop-shadow(10px,10px,10px,white); */
+  filter: drop-shadow(-1px -1px 5px #69e9d6);
+}
+
+.rings {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  /* background-color: #000000; */
+  border-radius: 150px 150px 0 0;
+  background: radial-gradient(circle at 50% 100%,transparent 30%, #69e9d6 40%,#404D44 50%,#44867c 60%,#404D44 70%,transparent);
+}
+
+#saturn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(80deg,#69e9d6,#404D44,#000000);
+}
+
+#ring1 {
+  transform: rotateX(80deg);
+  top: -20px;
+  left: -65px;
+}
+
+#ring2 {
+  transform: rotateX(-100deg);
+  left: -65px;
+  z-index: -1;
+  top: -3px;
+}
+
+.asteriods-large {
+  position: absolute;
+  width: 8px;
+  height: 10px;
+  border-radius: 15px 8px;
+  background: linear-gradient(220deg,#6f7776,#598ea3,#311515);
+  transform: rotateZ(0deg);
+  transition: all 3s;
+}
+
+#asteriod1 {
+  top: 8px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+#asteriod2 {
+  top: 35px;
+  height: 10px;
+  left: -55px;
+}
+
+#asteriod3 {
+  top: 35px;
+  height: 8px;
+  left: 85px;
+}
+
+#asteriod4 {
+  top: 40px;
+  height: 4px;
+  width: 4px;
+  left: -40px;
+}
+
+#asteriod5 {
+  top: 35px;
+  height: 4px;
+  width: 4px;
+  left: 82px;
+}
+
+.asteriods-small {
+  position: absolute;
+  width: 4px;
+  height: 3px;
+  border-radius: 15px 8px;
+  background: linear-gradient(80deg,#6f7776,#598ea3,#311515);
+  transform-origin: 50px 50px;
+  transform: rotateZ(0deg);
+  transition: all 3s;
+}
+
+#asteriod6 {
+  top: 6px;
+  left: -5px;
+  border-radius: 50%;
+}
+
+#asteriod7 {
+  top: 15px;
+  left: -35px;
+}
+
+#asteriod8 {
+  top: 35px;
+  left: 65px;
+}
+
+#asteriod9 {
+  top: 60px;
+  left: -10px;
+}
+
+#asteriod10 {
+  top: 15px;
+  left: 112px;
+}
+
+#explore {
+  position: absolute;
+  top: 32px;
+  font-size: 15px;
+  color: hsl(171, 59%, 74%);
+  left: 10px;
+  transition: all 3s;
+}
+
+.planet:hover > .asteriods-large,.main:hover > .asteriods-small {
+  transform: translateX(28px);
+}
+
+.planet:hover > #explore {
+  translate: -10px 20px;
+  transform: rotateZ(120deg);
+}
+
+.planet:not(hover) > #explore {
+  translate: 0px;
+  transform: rotateZ(0deg);
+}
+
+.planet:not(hover) > .asteriods-large,.main:not(hover) > .asteriods-small {
+  transform: translateX(0px);
+}
+
+.palnet:is(:active) > #explore {
+  translate: -100px 200px;
+}
+
+.planet:is(:active) {
+  translate: -200px;
+}
+
